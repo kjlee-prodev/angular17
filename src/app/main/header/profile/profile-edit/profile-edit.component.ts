@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-profile-edit',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  templateUrl: './profile-edit.component.html',
+  styleUrl: './profile-edit.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent {
-  title = 'shopping-mall';
+export class ProfileEditComponent {
+
 }

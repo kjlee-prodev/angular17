@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-profile-qna',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  templateUrl: './profile-qna.component.html',
+  styleUrl: './profile-qna.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent {
-  title = 'shopping-mall';
+export class ProfileQnaComponent {
+
 }
