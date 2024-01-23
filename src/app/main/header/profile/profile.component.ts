@@ -1,6 +1,6 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -10,6 +10,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './profile.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit {
+  activateRoute = inject(ActivatedRoute);
 
+  ngOnInit(): void {
+    console.log(this.activateRoute.snapshot);
+    console.log(this.activateRoute.snapshot.data['data']);
+  }
 }

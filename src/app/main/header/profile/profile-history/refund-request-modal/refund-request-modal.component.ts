@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-not-found',
+  selector: 'app-refund-request-modal',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './not-found.component.html',
-  styleUrl: './not-found.component.scss',
+  imports: [CommonModule, RouterModule],
+  templateUrl: './refund-request-modal.component.html',
+  styleUrl: './refund-request-modal.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NotFoundComponent {
+export class RefundRequestModalComponent {
 
 }
